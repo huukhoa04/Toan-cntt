@@ -1,0 +1,10 @@
+Module ngược:
+- là phép chia lấy dư
+vd: 75 mod 17 = 7 (dư), 75 div 17 = 4.
+BT3. kiểm tra các công thức ở slide 32 Chap_1.pdf
+BT4. kiểm tra công thức x^n mod m (trang 33 và code slide trang 34).
+BT5. 
+MODULE NGƯỢC:
+tìm x^-1 theo công thức ở slide 36
+    [x * x^-1 mod m = 1]
+x^-1 = (k*m + 1)/x và lấy số nhỏ nhất

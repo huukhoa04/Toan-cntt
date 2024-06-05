@@ -1,0 +1,12 @@
+thuat toan euclid:
+BT1. tìm ước chung lớn nhất, tìm bội chung nhỏ nhất từ 2 số a,b nhập từ bàn phím
+- Dùng đệ quy: gcd(a,b) = ---- a (nếu b = 0)
+                          ---- gcd(b, a mod b) (nếu b != 0)
+Euler totient function (ETF):
+a,b là các số nguyên tố cùng nhau nếu gcd(a,b) = 1
+(không có nghĩa a và b đều là số nguyên tố)
+*hàm ETF(n) tìm các số lượng các số nguyên tố cũng nhau từ 1 đến n.
+Đặc điểm: các số nguyên tố cùng nhau chỉ chia hết cho 1.
+BT2. Số lượng các số nguyên tố cùng nhau và liệt kê chúng (nhập n).
+*** ETF(n) = n-1 nếu n là prime.
+

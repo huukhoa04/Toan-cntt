@@ -1,0 +1,32 @@
+cho ma tran A
+7   1
+0   0
+5   5
+tim gia tri rieng
+U3 = (0,1,0)
+-> giải ra
+cho mt
+4   -2
+2   -1
+0   0
+=> có 1 lambda = 0
+tính vector riêng: lấy mỗi cột của A chia cho độ lớn của nó
+chỉ tính đc 1 U là u thứ 1
+U thứ 2 do lambda = 0 -> ko đc
+
+--> giả sử vector U thứ 2 có tọa độ (x1, y1, z1) và U3 (x2, y2, z2)
+lấy từng cặp 1 vector
+ptdt AtA
+2 vector (2/sqrt(5)) và -1/sqrt(5)
+U (3x3)
+lấy U đầu tiên -> U1(2/sqrt(5), 1/sqrt(5), 0) đối với lambda = 25
+U2 do lambda = 0 -> u2 đâu ra
+trực giao -> U1xU2 = 0 => 2x1 + y1 + 0z1 = 0
+ma trận đã cho(mxn) = U(mxm) x sigma(mxn) x Vt (nxn)
+cho mt
+-3  1
+6   -2
+6   -2
+----------
+tìm giá trị riêng, vector riêng trc -> xd bao nhiêu lambda
+-> tính u theo lambda, thiếu lambda thì dùng trực giao ma trận đã giải trong vở

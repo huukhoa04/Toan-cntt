@@ -1,0 +1,79 @@
+lagrange multi L(x, lambda)
+argument lagrange multi ALM(x, lambda)
+slide 
+-----------
+probability (xác suất)
+Markov chains
+*phụ thuộc vào trạng thái liền trước nó
+t <- t-1
+Ma trận chuyển vị
+tổng của mỗi hàng của ma trận trạng thái = 1
+*viết hàm mũ của ma trận (overload hàm pow)
+A^K = P*D*P^-1
+sử dụng chéo hóa để tính mũ của matrix K
+dùng BST structure
+-----------
+1.\
+cho hệ thống có trạng thái từ 1-n
+cho ma trận chuyển, vẽ đồ thị chuỗi Markov
+các đỉnh là các trạng thái
+2.\ giả sử hệ thống bắt đầu làm việc ở trạng thái thứ K
+tính xác suất hệ thống làm việc ở trạng thái k' với k' != k sau i bước
+3.\ Giả sử P có ma trận
+4x4
+{0,       0.75,    0.2,    0.05},
+{0.05,    0.2,     0.3,     0.45},
+{0.1,     0.4,     0.3,     0.2},
+{0,       0.15,    0.3,     0.55}
+(tất cả các hàng = 1)
+vẽ đồ thị chuỗi markov với ma trận này
+giả sử ban đầu hệ thống làm việc ở tt thứ 2 -> xác suất làm việc ở trạng thái thứ 1 sau 1, 2, 3 bước là bao nhiêu
+- xd 1 hàng pi làm việc ở vị trí thứ 2= 0   1   0   0
++ pi[1] = pi [0] * p = 0.05    0.2     0.3     0.45
++ sau b1, ở trạng thái thứ 1: 0.05  0.2   0.3     0.45
+- pi[2] = pi[0] * p^2
+- pi[3] = pi[0] * p^3
+06/05/2024: lập trình tìm ma trận A^k
+------------------------------------------------
+13/05/2024
+
+Chứng minh rằng: chứng minh chuỗi sau:
+1^18 + 2^18 + 3^18 + 4^18 + 5^18 + 6^18 = -1 mod 7
+37^(n+2) + 16^(n+1) + 23^n chia hết cho 7
+Cho chuỗi markov có 3 trạng thái, có ma trận chuyển như sau:
+p = 1/2 1/4 1/4
+p = 1/3 0   2/3 
+p = 1/2 1/2  0
+a: vẽ biểu đồ của chuỗi markov đã cho
+b: giả sử p[x1 = 1] = p[x1 = 2] = 1/4
+
+tìm p tại [x1 = 3], [x2 = 2], [x3 = 1]
+vector p: 1/4 1/4 1/2
+b. p[x1 = 3] = 1 - (p[x1 = 1] + p[x1 = 2]) = 2/4 = 1/2
+   p[x1 = 3 * p32 * p21] = 1/2 * 1/2 * 1/3 = 1/12
+
+    p[x2 = 2] = p[x2 = 2| x1 = 1] + p[x2 = 2| x1 = 2] + p[x2 = 2| x1 = 3]
+              = 1/4 * 1/4 + 1/4 * 1/3 + 1/2 * 1/2 = 1/16 + 1/12 + 1/4
+    p[x3 = 1] = 
+   p[x2 = 2] = 
+   p[x2 = 2] = 1/3 * 1/4  = 1/12, p[x1 = 2] = 1/4
+   p[x2 = 2] = 1/2 * 1/2 = 1/4, p[x1 = 3] = 1/2
+   => p[x2 = 2] = 0.395
+bài 3
+3.\ Giả sử P có ma trận
+4x4
+0       0.75    0.2     0.05
+0.05    0.2     0.3     0.45
+0.1     0.4     0.3     0.2
+0       0.15    0.3     0.55
+(tất cả các hàng = 1)
+vẽ đồ thị chuỗi markov với ma trận này
+giả sử ban đầu hệ thống làm việc ở tt thứ 2 -> xác suất làm việc ở trạng thái thứ 1 sau 1, 2, 3 bước là bao nhiêu
+- xd 1 hàng pi làm việc ở vị trí thứ 2 = 0   1   0   0
++ pi[1] = pi [0] * p = 0.05    0.2     0.3     0.45
++ sau b1, ở vị trí thứ 1: 0.05
+- pi[2] = pi[0] * p^2
+- pi[3] = pi[0] * p^3
+----
+cuối kì 5 bài
+mỗi chương 1 bài

@@ -1,0 +1,16 @@
+I. Cho số nguyên n, n>1, viết chương trình sử dụng hàm C/C++ thực hiện tìm các số nguyên tố nhỏ hơn n, liệt kê các số này và tính tổng của chúng
+với n = 25000
+b/ Tìm số nguyên tố gần n nhất
+
+II. cho số nguyên dương n = 82300, viết ct C/C++ sd hàm thực hiện 
+a/ tính số lượng các ước số của số nguyên dương n đã cho. Trong các ước số tìm được, có bao nhiêu số nguyên tố
+liệt kê và tính tổng của các ước số này
+b/ Tìm số lượng các số hoàn hảo giữa 1 và n
+
+III. Cho hệ pt như sau, viết pt tính
+x = 2 mod 3
+x = 4 mod 5
+x = 6 mod 7
+x = 9 mod 11
+x = 11 mod 13
+

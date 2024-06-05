@@ -1,0 +1,21 @@
+chap3. Geometry.
+1. CHO N ĐIỂM TRONG KHÔNG GIAN(CÓ TỌA ĐỘ 2D, 3D).
+- Tính diện tích đa giác chứa tất cả các điểm đã cho.
+- Tìm khoảng cách lớn nhất giữa các điểm: kèm theo đảm bảo độ chính xác.
+- Xác định bao lồi hoặc (convex hull). : kèm theo độ phức tạp thuật toán.
+* polygon area (slide 19-20):
+- nhập số điểm .
+- nối các điểm .
+đường bao lồi nhỏ nhất: đường bao chứa tất cả các điểm ko kể trên dường bao lồi mà là cả bên trong.
+* Hàm khoảng cách euclid
+* closest pair program (geeksforgeeks) complexity: <n^2.
+nlogn: 1 vòng lặp nhưng có điều kiện đi kèm.
+*convex hull's algs:
+- Andrew's alg.
+- monotone chain alg.
+- Jarvis alg (Wrapping).
+- Divide-and-conquer (Chia để trị).
+- Graham (scanning).
+- Chan (shattering).
+
+* tính diện tích, tính khoảng cách ngắn nhất, xác định bao lồi
